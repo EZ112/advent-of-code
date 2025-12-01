@@ -15,9 +15,6 @@ def main():
             curr+=right_rotate
         curr%=100
 
-        if(curr<0):
-            curr+=100;
-
         if(curr==0):
             zeros+=1
         print(f'{rotate} -> {curr}')
