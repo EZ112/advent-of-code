@@ -1,6 +1,8 @@
+import sys
+
 def main():
     instruction = []
-    with open('input') as r:
+    with open(sys.argv[1]) as r:
         for text in r:
             instruction.append(text.replace('\n',''))
 
