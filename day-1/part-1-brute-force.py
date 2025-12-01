@@ -18,9 +18,8 @@ def main():
         else:
             for _ in range(num):
                 curr+=1
-                if(curr>100):
+                if(curr>=100):
                     curr-=100
-        curr%=100
         if(curr == 0):
             zeros+=1
                 
