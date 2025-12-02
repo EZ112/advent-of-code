@@ -14,6 +14,7 @@ def main():
             num_str = str(i)
             num_len = len(num_str)
 
+            print(f'[{i}]')
             step = 1
             while step<num_len:
                 total=0
@@ -21,7 +22,8 @@ def main():
                     curr_num = int(num_str[j:j+step], base=10)
                     next_num = int(num_str[j+step:j+step+step], base=10)
                     total += curr_num+next_num if curr_num == 0 or next_num == 0 else abs(curr_num-next_num)
-                    print(f'{curr_num}, {next_num}-> {total}')
+                    print(f'({curr_num}, {next_num})-> {total}', end=', ')
+                print()
 
                 if(total==0):
                     invalid_ids.append(i)
