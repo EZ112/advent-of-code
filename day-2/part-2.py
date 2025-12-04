@@ -30,7 +30,6 @@ def main():
                     break
                 step+=1
 
-    invalid_ids.sort()
     print(invalid_ids)
     print('sum:', sum(invalid_ids))
 
