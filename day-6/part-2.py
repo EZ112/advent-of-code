@@ -17,7 +17,6 @@ def main():
     numbers_ordered_str = ['' for _ in range(len(numbers[0]))]
     for r_idx, row in enumerate(numbers):
         for c_idx, col in enumerate(row):
-            # print(f'({r_idx},{len(row)-1-c_idx}, {row[len(row)-1-c_idx]})', end=', ')
             numbers_ordered_str[c_idx]+=row[len(row)-1-c_idx]
 
     numbers_ordered = list(map(lambda x: int(x.strip(), base=10) if x.strip()!='' else 0, numbers_ordered_str))
